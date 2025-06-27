@@ -39,22 +39,5 @@ resource "render_background_worker" "resource-aor-ds-bot" {
       runtime       = "python"
     }
 
-    autoscaling = {
-      enabled = true
-      min     = 1
-      max     = 5
-
-      criteria = {
-        cpu = {
-          enabled    = true
-          percentage = 90
-        }
-
-        memory = {
-          enabled    = true
-          percentage = 80
-        }
-      }
-    }
-  }
+    
 }

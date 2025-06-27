@@ -1,0 +1,88 @@
+{
+    "players": {
+        "Leo cJ (JOAODOQUILOMBO)": {
+            "wins": 9,
+            "losses": 20,
+            "win_rate": 31.03,
+            "total_games": 29
+        },
+        "\u300eMahou_Flame\u300f": {
+            "wins": 12,
+            "losses": 5,
+            "win_rate": 70.59,
+            "total_games": 17
+        },
+        "vodoguel": {
+            "wins": 4,
+            "losses": 9,
+            "win_rate": 30.77,
+            "total_games": 13
+        },
+        "namrepuC": {
+            "wins": 6,
+            "losses": 5,
+            "win_rate": 54.55,
+            "total_games": 11
+        },
+        "xxdmattos": {
+            "wins": 8,
+            "losses": 9,
+            "win_rate": 50.0,
+            "total_games": 17
+        },
+        "V1N3X": {
+            "wins": 14,
+            "losses": 8,
+            "win_rate": 63.64,
+            "total_games": 22
+        },
+        "T$RG37": {
+            "wins": 6,
+            "losses": 9,
+            "win_rate": 40.0,
+            "total_games": 15
+        },
+        "V10KTH0R": {
+            "wins": 4,
+            "losses": 5,
+            "win_rate": 50.0,
+            "total_games": 10
+        },
+        "Tornado12328": {
+            "wins": 16,
+            "losses": 5,
+            "win_rate": 76.19,
+            "total_games": 21
+        },
+        "miguel": {
+            "wins": 4,
+            "losses": 5,
+            "win_rate": 44.44,
+            "total_games": 9
+        },
+        "04": {
+            "wins": 6,
+            "losses": 1,
+            "win_rate": 85.71,
+            "total_games": 7
+        },
+        "manuelinha churrasqueira": {
+            "wins": 2,
+            "losses": 0,
+            "win_rate": 100.0,
+            "total_games": 2
+        },
+        "frais": {
+            "wins": 0,
+            "losses": 1,
+            "win_rate": 0.0,
+            "total_games": 1
+        },
+        "Mattd": {
+            "wins": 0,
+            "losses": 1,
+            "win_rate": 0.0,
+            "total_games": 1
+        }
+    }
+}

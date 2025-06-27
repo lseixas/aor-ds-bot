@@ -1,0 +1,30 @@
+import asyncio
+
+import discord
+from dotenv import load_dotenv
+import os
+from discord.ext import commands
+
+load_dotenv()
+
+INTENTS = discord.Intents.all()
+DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
+
+bot = commands.Bot(command_prefix='!', intents=INTENTS)
+
+@bot.event
+async def on_ready():
+    print(os.listdir("./app/cogs"))
+    print(f'Logged in as {bot.user.name}')
+
+async def load():
+    for filename in os.listdir("./app/cogs"):
+        if filename.endswith(".py"):
+            await bot.load_extension(f"cogs.{filename[:-3]}")
+
+async def main():
+    async with bot:
+        await load()
+        await bot.start(DISCORD_TOKEN)
+
+asyncio.run(main())

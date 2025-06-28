@@ -30,7 +30,7 @@ resource "render_background_worker" "resource-aor-ds-bot" {
   plan   = "starter"
   region = "oregon"
 
-  start_command = "printenv && python -m app.main"
+  start_command = "python -m app.main"
 
   env_vars = {
     "DISCORD_TOKEN" = { value = var.DISCORD_TOKEN }

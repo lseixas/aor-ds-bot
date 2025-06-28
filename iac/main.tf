@@ -20,7 +20,7 @@ resource "render_background_worker" "resource-aor-ds-bot" {
   plan   = "starter"
   region = "oregon"
 
-  start_command = "python -m app.main"
+  start_command = "printenv && python -m app.main"
 
   runtime_source = {
 

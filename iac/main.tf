@@ -1,5 +1,15 @@
 
 terraform {
+
+cloud {
+
+    organization = "AfraidORespect"
+
+    workspaces {
+      name = "gh-actions-workspace"
+    }
+  }
+
   required_providers {
     render = {
       source  = "render-oss/render"

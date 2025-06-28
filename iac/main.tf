@@ -1,7 +1,7 @@
 
 terraform {
 
-cloud {
+  cloud {
 
     organization = "AfraidORespect"
 
@@ -32,14 +32,14 @@ resource "render_background_worker" "resource-aor-ds-bot" {
 
   start_command = "printenv && python -m app.main"
 
-  runtime_source = {
+  env_vars = {
+    "DISCORD_TOKEN" = { value = var.DISCORD_TOKEN }
+    "APP_ID"        = { value = var.APP_ID }
+    "PUBLIC_KEY"    = { value = var.PUBLIC_KEY }
+    "GUILD_ID"      = { value = var.GUILD_ID }
+  }
 
-    env_vars = {
-      "DISCORD_TOKEN" = { value = var.DISCORD_TOKEN }
-      "APP_ID"        = { value = var.APP_ID }
-      "PUBLIC_KEY"    = { value = var.PUBLIC_KEY }
-      "GUILD_ID"      = { value = var.GUILD_ID }
-    }
+  runtime_source = {
     native_runtime = {
       repo_url      = "https://github.com/lseixas/aor-ds-bot"
       auto_deploy   = true

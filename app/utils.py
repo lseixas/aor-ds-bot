@@ -12,7 +12,7 @@ async def print_table():
     try:
         print('tried printing')
 
-        with open(Path("./app/cogs/ranking.json"), "r") as f:
+        with open(Path("./app/repo/season2/ranking.json"), "r") as f:
             ranking = json.load(f)
             if ranking.get('players') is None:
                 ranking['players'] = {}

@@ -31,7 +31,7 @@ class Registerwl(commands.Cog):
 
         print('before json')
 
-        file_path_ranking = Path("./app/cogs/ranking.json").resolve()
+        file_path_ranking = Path("./app/repo/season2/ranking.json").resolve()
         file_path_partners = Path("./app/cogs/partners.json").resolve()
 
         with open(file_path_partners, "r") as f:

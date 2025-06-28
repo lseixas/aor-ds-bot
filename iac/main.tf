@@ -16,7 +16,7 @@ provider "render" {
 
 resource "render_background_worker" "resource-aor-ds-bot" {
 
-  name   = "git-background-worker"
+  name   = "aor-ds-bot"
   plan   = "starter"
   region = "oregon"
 

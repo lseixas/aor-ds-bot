@@ -18,9 +18,9 @@ async def on_ready():
     print(f'Logged in as {bot.user.name}')
 
 async def load():
-    for filename in os.listdir("./app/cogs"):
+    for filename in os.listdir("./app/cogs/commands"):
         if filename.endswith(".py") and filename != "__init__.py":
-            await bot.load_extension(f"app.cogs.{filename[:-3]}")
+            await bot.load_extension(f"app.cogs.commands.{filename[:-3]}")
 
 async def main():
     async with bot:

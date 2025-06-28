@@ -13,6 +13,9 @@ jobs:
   terraform:
     name: Terraform Deploy
     runs-on: ubuntu-latest
+
+    env:
+      TF_TOKEN_app_terraform_io: ${{ secrets.TFC_TOKEN }}
     
     defaults:
       run:
@@ -53,3 +56,7 @@ jobs:
           TF_VAR_APP_ID: ${{secrets.APP_ID}}
           TF_VAR_GUILD_ID: ${{secrets.GUILD_ID}}
           TF_VAR_PUBLIC_KEY: ${{secrets.PUBLIC_KEY}}
+
+      - name: Terraform Output
+        id: output
+        run: terraform output -json

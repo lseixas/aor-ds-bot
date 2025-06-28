@@ -38,6 +38,5 @@ resource "render_background_worker" "resource-aor-ds-bot" {
       repo_url      = "https://www.github.com/lseixas/aor-ds-bot"
       runtime       = "python"
     }
-
-    
+  }
 }

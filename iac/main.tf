@@ -22,19 +22,20 @@ resource "render_background_worker" "resource-aor-ds-bot" {
 
   start_command = "python -m app.main"
 
-      env_vars = {
-    "DISCORD_TOKEN" = { value = var.DISCORD_TOKEN }
-    "APP_ID"        = { value = var.APP_ID }
-    "PUBLIC_KEY"    = { value = var.PUBLIC_KEY }
-    "GUILD_ID"      = { value = var.GUILD_ID }
-    }
-
   runtime_source = {
 
+    env_vars = {
+      "DISCORD_TOKEN" = { value = var.DISCORD_TOKEN }
+      "APP_ID"        = { value = var.APP_ID }
+      "PUBLIC_KEY"    = { value = var.PUBLIC_KEY }
+      "GUILD_ID"      = { value = var.GUILD_ID }
+    }
+    native_runtime = {
+      repo_url      = "https://github.com/lseixas/aor-ds-bot"
       auto_deploy   = true
       branch        = "main"
       build_command = "pip install -r requirements.txt"
-      repo_url      = "https://www.github.com/lseixas/aor-ds-bot"
       runtime       = "python"
+    }
   }
 }
